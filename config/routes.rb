@@ -1,5 +1,10 @@
 Hacklendar::Application.routes.draw do
-  resources :diary_entries
+  
+
+
+match 'second_diary_entries' => 'second_diary_entries#index'
+
+match 'second_diary_entries/new' => 'second_diary_entries#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

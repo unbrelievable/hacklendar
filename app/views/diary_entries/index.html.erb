@@ -4,8 +4,8 @@
   <tr>
     <th>Name</th>
     <th>Description</th>
-    <th></th>
-    <th></th>
+    <th>Mood</th>
+    <th>Username</th>
     <th></th>
   </tr>
 
@@ -13,6 +13,8 @@
   <tr>
     <td><%= diary_entry.name %></td>
     <td><%= diary_entry.description %></td>
+    <td><%= diary_entry.mood %></td>
+    <td><%= diary_entry.user_name %></td>
     <td><%= link_to 'Show', diary_entry %></td>
     <td><%= link_to 'Edit', edit_diary_entry_path(diary_entry) %></td>
     <td><%= link_to 'Destroy', diary_entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>

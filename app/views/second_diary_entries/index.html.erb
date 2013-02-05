@@ -1,0 +1,27 @@
+THIS IS MY VIEW BITCHES
+
+<%= @diary_entries.count %>
+
+<%= @diary_happy.count %> 
+
+<table>
+	
+<% @diary_entries.each do |d| %>
+	<tr>
+		<td>
+			<% if d.mood == "happy" %>
+
+				<div style='color: limegreen'> 
+					<%= d.name %>
+				</div>
+			
+			<% else %>
+
+				<%= d.name %>
+			<% end %>
+		</td>
+	</tr>
+<% end %>
+
+</table>
+
